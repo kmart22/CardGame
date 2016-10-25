@@ -6,4 +6,9 @@
 //  Copyright © 2016 Martinsen, Kaden. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class PlayingCard : Card
+{
+    
+}
