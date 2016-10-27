@@ -23,6 +23,8 @@ class PlayingCard : Card
         }
     }
     
+    
+    
     private var suit : String
     {
         get
@@ -34,6 +36,8 @@ class PlayingCard : Card
             self.suit = suit
         }
     }
+    
+    
     
     private var frontImage : UIImage
     {
@@ -48,6 +52,31 @@ class PlayingCard : Card
     }
     
     
+    private var color : UIColor
+    {
+            get
+            {
+                return self.color
+            }
+            set(color)
+            {
+                self.color = color
+            }
+    }
+    
+    
+    
+    override init()
+    {
+        super.init()
+        frontImage = UIImage()
+        color = UIColor()
+        rank = 0
+        suit = String()
+    }
+    
+    
+    
     func getRank() -> Int
     {
         return self.rank
@@ -55,5 +84,13 @@ class PlayingCard : Card
     func setRnk(rank : Int)
     {
         self.rank = rank
+ 
     }
+    override func toString() -> String
+    {
+        let description = "this PlayingCard has a face value of \(rank), a color of \(color), and a suit is of the \(suit) suit"
+        
+        return description
+    }
+    
 }

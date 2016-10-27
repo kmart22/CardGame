@@ -32,17 +32,8 @@ class Card
        return backImage
     }
     
-    override init()
-    {
-        super.init()
-        frontImage = UIImage()
-        color = UIColor()
-        rank = 0
-        suit = ""
-    }
-    
-    
-    
+  
+
     
     
     
