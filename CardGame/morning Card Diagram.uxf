@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>450</y>
+      <w>260</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: Deck
+--
+-cards : PlayingCard[]
+
+--
++init()
++shuffle : Void
++order: Void
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>140</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>CardGame :: Card
+--
+-backImage : UIImage
+-isFaceUp : Bool
+--
++ init()
++getBackImage() : UIImage
++isFaceUp() : Bool
++toString() : String
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>270</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>410</y>
+      <w>260</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>CardGame.model:: PlayingCard
+--
+-suit : String
+-color : UIColor
+-rank : int
+-frontImage : UIImage
+
+--
++ get/set
++ init
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>480</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>20</y>
+      <w>260</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Package :: Class
+--
+Data Mebers
+
+--
+Constructors and Methods</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>130</x>
+      <y>160</y>
+      <w>260</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: Deck
+--
+
+
+--
+init()
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>260</y>
+      <w>30</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+</diagram>
