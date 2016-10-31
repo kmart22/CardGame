@@ -15,9 +15,8 @@ class Card
     
     init()
     {
-        isFaceUp = false
-        backImage = UIImage()
-        
+        backImage = UIImage(named: "cardback")!
+        isFaceUp = false 
     }
     
     func toString() -> String
