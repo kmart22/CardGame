@@ -69,12 +69,22 @@ class PlayingCard : Card
     override init()
     {
         super.init()
-        frontImage = UIImage()
-        color = UIColor()
+        frontImage = UIImage(named: "cardfront")!
+        color = UIColor.redColor()
         rank = 0
         suit = String()
     }
     
+    init(withRank: Int, ofSuit: String)
+    {
+        super.init()
+        frontImage = UIImage(named: "cardfront")!
+        color = UIColor.redColor()
+        
+        rank = withRank
+        suit = ofSuit
+
+    }
     
     
     func getRank() -> Int
@@ -103,5 +113,15 @@ class PlayingCard : Card
         
         return description
     }
-    
+    //The Modifier 'class' in front of the func means that this method id visible
+    //without creating an instance of the class question
+    //This is a calss method, not an instance method.
+    class func validRanks () -> [String]
+    {
+        return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
+    class func validSuits()-> [String]
+    {
+        return["❤️","♠️","♣️","♦️"]
+    }
 }
