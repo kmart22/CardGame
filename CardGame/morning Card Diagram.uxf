@@ -15,9 +15,8 @@
 
 --
 +init()
-+shuffle : Void
-+order: Void
-bg=yellow</panel_attributes>
++order : Void
+bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -67,21 +66,10 @@ bg=magenta</panel_attributes>
 -frontImage : UIImage
 
 --
-+ get/set
-+ init
++ init()
++init(withRank:int, ofSuit:String)
 bg=green</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>380</x>
-      <y>480</y>
-      <w>170</w>
-      <h>30</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -109,10 +97,12 @@ Constructors and Methods</panel_attributes>
     </coordinates>
     <panel_attributes>CardGame.Model :: Deck
 --
-
+-cards : [Card]
 
 --
-init()
++init()
++shuffle(): Void
++cutDeck() : Void
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
@@ -126,5 +116,16 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>500</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
   </element>
 </diagram>
