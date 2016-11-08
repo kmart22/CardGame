@@ -72,7 +72,7 @@ class PlayingCard : Card
    
     class func maxRank() -> Int
     {
-        return validRanks().count- 1
+        return validRanks().count-1
     }
     
     class func validSuits()-> [String]
