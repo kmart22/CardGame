@@ -40,12 +40,18 @@ class PlayingCard : Card
     {
         return self.rank
     }
-    func setRnk(rank : Int)
+    func setRank(rank : Int)
     {
         self.rank = rank
  
     }
     
+    func getCardData() -> String
+    {
+        let data = "\(PlayingCard.validRanks()[rank]) \(suit)"
+        return data
+    }
+
     override func toString() -> String
     {
         let facing :String
