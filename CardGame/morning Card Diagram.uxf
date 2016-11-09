@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>130</x>
-      <y>450</y>
+      <y>470</y>
       <w>260</w>
       <h>110</h>
     </coordinates>
@@ -23,7 +23,7 @@ bg=orange</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>510</x>
-      <y>140</y>
+      <y>160</y>
       <w>260</w>
       <h>140</h>
     </coordinates>
@@ -43,7 +43,7 @@ bg=magenta</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>640</x>
-      <y>270</y>
+      <y>290</y>
       <w>30</w>
       <h>160</h>
     </coordinates>
@@ -54,9 +54,9 @@ bg=magenta</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>530</x>
-      <y>410</y>
+      <y>430</y>
       <w>260</w>
-      <h>170</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>CardGame.model:: PlayingCard
 --
@@ -66,8 +66,12 @@ bg=magenta</panel_attributes>
 -frontImage : UIImage
 
 --
-+ init()
++getRank() : Int
++getSuit() : String
++getColor() : UColor
++ init() : Initializer
 +init(withRank:int, ofSuit:String)
++toString() : String
 bg=green</panel_attributes>
     <additional_attributes/>
   </element>
@@ -75,7 +79,7 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>490</x>
-      <y>20</y>
+      <y>40</y>
       <w>260</w>
       <h>110</h>
     </coordinates>
@@ -91,9 +95,9 @@ Constructors and Methods</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>130</x>
-      <y>160</y>
+      <y>180</y>
       <w>260</w>
-      <h>110</h>
+      <h>170</h>
     </coordinates>
     <panel_attributes>CardGame.Model :: Deck
 --
@@ -101,8 +105,10 @@ Constructors and Methods</panel_attributes>
 
 --
 +init()
-+shuffle(): Void
++shuffleDeck(): Void
 +cutDeck() : Void
++drawCard() :Crd?
++drawRandomCard() : Card?
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
@@ -110,22 +116,34 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>250</x>
-      <y>260</y>
+      <y>340</y>
       <w>30</w>
-      <h>210</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>380</x>
-      <y>500</y>
+      <y>520</y>
       <w>170</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>380</x>
+      <y>230</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=dark_gray</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
   </element>
 </diagram>
