@@ -25,12 +25,12 @@ class CardGameController : UIViewController
     @IBAction func flipCard(sender: UIButton)
     {
         clickCount += 1
-        let words = "the card has been clicked /(clickCount) times"
+        let words = "the card has been clicked \(clickCount) times"
         cardLabel.text = words
         
         if let currentCard = currentDeck.drawRandomCard() as? PlayingCard
         {
-            cardButton.setTitle("\(currentCard.GetCardData())", forState: UIControlState.Normal)
+            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
         }
         else
         {

@@ -46,7 +46,7 @@ class Deck
         }
     }
     
-    func dwRandomCard() -> Card?
+    func drawRandomCard() -> Card?
     {
         if cards.count > 0
         {

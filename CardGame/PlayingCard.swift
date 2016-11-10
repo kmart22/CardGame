@@ -17,7 +17,7 @@ class PlayingCard : Card
     
     override init()
     {
-        frontImage = UIImage(named: "cardfront")!
+        frontImage = UIImage(named: "cardback")!
         color = UIColor.redColor()
         rank = 0
         suit = String()
@@ -27,7 +27,7 @@ class PlayingCard : Card
     init(withRank: Int, ofSuit: String)
     {
        
-        frontImage = UIImage(named: "cardfront")!
+        frontImage = UIImage(named: "cardback")!
         color = UIColor.redColor()
         rank = withRank
         suit = ofSuit
