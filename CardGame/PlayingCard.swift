@@ -64,7 +64,7 @@ class PlayingCard : Card
             facing = "is face down"
         }
         
-        let description = "this PlayingCard has a face value of \(rank), a color of \(color), the back image is \(self.getBackImage()) and a suit is of the \(suit) suit \(facing)"
+        let description = "this PlayingCard has a face value of \(rank), a color of \(color) and a suit is of the \(suit) suit \(facing)"
         
         return description
     }
