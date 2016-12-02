@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StuidGame
+class StupidGame
 {
     //Declaration Section
     internal var deck = PlayingCardDeck()
@@ -16,6 +16,7 @@ class StuidGame
     lazy var turn = 1;
     lazy var players = 4;
     lazy var handSize = 5;
+    internal var score: Int
     
     //inits
     init()
